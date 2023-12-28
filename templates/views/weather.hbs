@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>Weather</title>
+</head>
+<body>
+
+    {{>headers}}
+
+    <div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-header">
+                    <h3 class="text-center">Weather Search</h3>
+                </div>
+                <div class="card-body">
+
+                    <form id="weatherForm">
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="city" name="city-name" placeholder="Enter City Name" >
+                        </div>
+                        <button type="submit" class="btn btn-dark btn-block" id="submit_btn">Search</button>
+                    </form>
+
+
+                </div>
+
+            </div>
+        </div>
+{{!-- output card --}}
+        <div class="col-md-4 " style="">
+            <div class="card  " style=
+            "border-color:#242222; 
+             border-width:1px;
+             background-color:rgb(56, 57, 57) "
+            >
+                <div class="top-layer">
+                    <h3 class="text-center" style="color:white;"><span id ="head-name" style="display:none">Kolkata</span> Weather Report</h3>
+                </div>
+                <div class="card-body">
+                    <h5 id="city_n" style="color:white;">Enter City name</h5>
+                    <p id="temp"style="color:white;"><span>0</span> <sup>o</sup><span>C</span></p>
+                    <p id="temp-status"style="color:white;"><i class="fa fa-cloud" area-hidden="true"></i>Temp Status : None</p>
+                    <p id="card-text"style="color:white;">Humidity: 0%</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <!-- Add your JavaScript for handling form submission and weather data retrieval here -->
+<hr style="border-width: 10px ; color:black">
+
+
+</hr>
+<h1 style="text-align: center; margin:auto; font-family:Georgia, 'Times New Roman', Times, serif">
+   Todays Recorded weather
+</h1>
+    <div class="d-flex justify-content-center">
+        <div class="container mt-5">
+            <div class="row">
+
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-header">
+                            <h3 class="text-center"> Kolkata Weather Report</h3>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">City: New York</h5>
+                            <p class="card-text">Temperature: 25°C</p>
+                            <p class="card-text">Condition: Sunny</p>
+                            <p class="card-text">Humidity: 60%</p>
+                            <p class="card-text">Wind Speed: 10 km/h</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-header">
+                            <h3 class="text-center"> Mumbai Weather Report</h3>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">City: New York</h5>
+                            <p class="card-text">Temperature: 25°C</p>
+                            <p class="card-text">Condition: Sunny</p>
+                            <p class="card-text">Humidity: 60%</p>
+                            <p class="card-text">Wind Speed: 10 km/h</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-header">
+                            <h3 class="text-center"> Drabhanga Weather Report</h3>
+                        </div>
+                        <div class="card-body">
+                            <h5 id="card-title">City: New York</h5>
+                            <p temp="temp"><span>0</span> <sup>0</sup><span>C</span> </p>
+                            <p class="card-text">Condition: Sunny</p>
+                            <p class="card-text">Humidity: 60%</p>
+                            <p class="card-text">Wind Speed: 10 km/h</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+    {{>footers}}
+  <!-- Corrected script tag for including JavaScript file -->
+<script src="js/main.js"></script>
+
+    
+</body>
+
+</html>

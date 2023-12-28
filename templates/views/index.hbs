@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>Govind Jha - Full Stack Developer</title>
+     <img src="../../assets" alt="" style="height: 3rem;">
+     <link rel="stylesheet" href="css/header.css" class="">
+     
+</head>
+
+<body>
+
+    {{>headers}}
+
+    
+    <section id="about" class="py-5">
+        <div class="container">
+            <div class="card">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <img src="img.jpg" style="width: 300px;" alt="Govind Jha" class="img-fluid rounded-circle">
+                        </div>
+                        <div class="col-md-8">
+                            <h3 class="card-title">About Govind Jha</h3>
+                            <p class="card-text">Govind Jha is a Full Stack Developer with a passion for creating robust and scalable web applications. He holds a Bachelor's degree in Computer Science from [Your University].</p>
+
+                            <h5>Education</h5>
+                            <ul>
+                                <li>Bachelor's in Computer Science - Institute of Engineering and Management Kolkata</li>
+                            </ul>
+
+                            <h5>Skills</h5>
+                            <p>Govind has expertise in:</p>
+                            <ul>
+                                <li>Front-end development using HTML, CSS, and JavaScript</li>
+                                <li>Back-end development with Node.js and Express</li>
+                                <li>Database design and management using MongoDB</li>
+                                <li>React.js for building interactive user interfaces</li>
+                                <li>Responsive and mobile-first design</li>
+                            </ul>
+
+                            <h5>Experience</h5>
+                            <p>Govind has [3 years] of experience working in the software development industry. He has successfully delivered projects for various clients, demonstrating his commitment to quality and innovation.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    {{>footers}}
+      
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script class="">
+        function gotothispath() {
+            window.location.href = "/projects";
+        }
+    </script>
+    
+    
+
+</body>
+
+</html>

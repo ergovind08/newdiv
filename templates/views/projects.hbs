@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/projects.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <title>Your Project Title</title>
+</head>
+<body>
+    
+   {{>headers}} 
+   <section class="new_sex">
+       
+       <h2>Work Flow</h2>
+       <p>Future adda Videos on Technology</p>
+
+       <!-- Bootstrap Card Section -->
+       <div class="card">
+           <div class="card-header">
+               Featured Video
+           </div>
+           <div class="card-body row">
+               <div class="col-md-6">
+                   <iframe width="400" height="200" src="https://www.youtube.com/embed/4NYYpUKZjaw?si=ybm6gfF6JKyfOASk" frameborder="0" allowfullscreen></iframe>
+               </div>
+               <div class="col-md-6">
+                   <iframe width="400" height="200" src="https://www.youtube.com/embed/c4iQFFgC8GM?si=noz-yin-CeJ2RBxU" frameborder="0" allowfullscreen></iframe>
+               </div>
+           </div>
+           <div class="card-body row">
+               <div class="col-md-6">
+                   <iframe width="400" height="200" src="https://www.youtube.com/embed/3z9I9jx2PLk?si=zbeo1f-LWyy-1nz3" frameborder="0" allowfullscreen></iframe>
+               </div>
+               <div class="col-md-6">
+                   <iframe width="400" height="200" src="https://www.youtube.com/embed/RtVRsm7asBY?si=y0z5S33z3sIjsvCL" frameborder="0" allowfullscreen></iframe>
+               </div>
+           </div>
+       </div>
+
+       <div class="card">
+           <div class="card-header">
+               Project Details
+           </div>
+           <div class="card-body">
+               <h5 class="card-title">Card Title</h5>
+               <p class="card-text">Add details about your project here.</p>
+               <a href="/404" class="btn btn-dark">Learn More</a>
+           </div>
+       </div>
+   </section>
+
+   {{>footers}}
+</body>
+</html>
